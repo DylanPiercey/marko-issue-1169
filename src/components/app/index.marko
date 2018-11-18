@@ -1,0 +1,10 @@
+class {
+  switchTab() {
+    console.log(arguments);
+  }
+}
+
+<Tab block=true>
+  <TabItem active=true on-select('switchTab', 'login')>Log In</TabItem>
+  <TabItem active=false on-select('switchTab', 'signup')>Sign Up</TabItem>
+</Tab>
